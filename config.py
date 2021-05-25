@@ -1,0 +1,24 @@
+""" Training configuration """
+
+# util.fc4_augmentation.py
+AUGMENTATION_ANGLE = 360
+AUGMENTATION_SCALE = [0.1, 1.0]
+AUGMENTATION_GAIN = [0.8, 1.2]
+AUGMENTATION_COLOR = 0.4
+TRAINING_IMAGE_SIZE = 256
+
+# train.py
+EXP_NAME = 'gehler_squeezenet_trainfold01'
+DATA_DIR = 'data'
+DATA_NAME = 'gehler'
+TRAIN_BATCH_SIZE = 16
+TRAIN_FOLDS = [0,1]
+TEST_FOLDS = [2]
+
+BACKBONE = 'squeezenet' # 'alexnet'
+GLOBAL_WEIGHT_DECAY = 5.7e-5
+LEARNING_RATE = 3e-4
+PRETRAIN_EPOCHS = 5000
+JOINTTRAIN_EPOCHS = 15000
+N_NEGATIVE = 12
+TEST_PERIOD = 20

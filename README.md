@@ -12,7 +12,7 @@ TL;DR:
  
 ## Code
 **CLCC** is a Python 3 & TensorFlow 1.x implementation based on [**FC4**](https://github.com/yuanming-hu/fc4) codebase.
-* **Dataset preparation**: Download dataset from here. Please make sure your dataset folder structure is `data/<camera_name>/<fold_id>` (e.g., `data/gehler/0`). See the *Dataset overview* section for more info.
+* **Dataset preparation**: Download dataset from here. Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`). See the *Dataset overview* section for more info.
 * **Training**: Modify `config.py` (rename `EXP_NAME` and specify training data `DATA_NAME`, `TRAIN_FOLDS`, `TEST_FOLDS`) and execute `train.py`. Checkpoints will be saved under `ckpts/EXP_NAME` during training.
 * **Evaluation**: Once training is done, you can evaluate checkpoint with `eval.py` on a specific test fold. We recommend to refer to `scripts/eval_squeezenet_clcc_gehler.sh` for 3-fold cross-validation.
 

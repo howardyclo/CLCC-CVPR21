@@ -90,7 +90,7 @@ def main(sess):
     contrastive_loss /= 4
 
     # Testing loss
-    test_loss = util.loss.angular_loss(test_out["illums"], x["illums"])
+    test_loss = util.loss.angular_loss(test_out["illums"], x["illums"], average=True)
 
     """ Build training op """
     pretrain_loss = (0.1 * color_constancy_loss) + contrastive_loss + reg_loss

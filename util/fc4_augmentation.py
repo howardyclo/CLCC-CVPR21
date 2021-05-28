@@ -74,6 +74,7 @@ def augment(image, illum, cc24):
     image = rand_crop_square(image)
     image = rand_rotate_and_crop(image)
     image = cv2.resize(image, (TRAINING_IMAGE_SIZE, TRAINING_IMAGE_SIZE))
+    image = rand_flip(image)
     image = rand_intensity_gain_and_mask_overexposure(image)
     image, illum, cc24 = rand_coloraug(image, illum, cc24)
     return image, illum, cc24

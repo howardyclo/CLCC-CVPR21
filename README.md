@@ -9,18 +9,20 @@ MediaTek Inc., Hsinchu, Taiwan
 
 ## Paper
 TL;DR: 
- 
-## Code
-**CLCC** is a Python 3 & TensorFlow 1.x implementation based on [**FC4**](https://github.com/yuanming-hu/fc4) codebase.
-* **Dataset preparation**: Download dataset from here. Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`).
-* **Training**: Modify `config.py` (i.e., you may want to rename `EXP_NAME` and specify training data `DATA_NAME`, `TRAIN_FOLDS`, `TEST_FOLDS`) and execute `train.py`. Checkpoints will be saved under `ckpts/EXP_NAME` during training.
-* **Evaluation**: Once training is done, you can evaluate checkpoint with `eval.py` on a specific test fold. We recommend to refer to `scripts/eval_squeezenet_clcc_gehler.sh` for 3-fold cross-validation.
 
-## Dataset
+## [Download Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
 Since the [original data preprocessing code](https://github.com/yuanming-hu/fc4/blob/master/datasets.py) and procedure are quite tedious, we preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:
 * Raw image: Mask color checker; Subtract black level; Convert to uint16 [0, 65535] BGR numpy array with shape (H, W, 3).
 * RGB label: L2-normalized numpy vector with shape (3,).
 * Color checker: [0, 4095] BGR numpy array with shape (24, 3) for raw-to-raw mapping presented in our paper (see `util/raw2raw.py` and also *section 4.3* in our paper). A few of them are stored in all zeros due to the failure of color checker detection. Note that we convert it into RGB format during preprocessing in `dataloader.py`, and our raw-to-raw mapping algorithm also manipulates it in RGB format.
+ 
+## Training and Evaluation
+**CLCC** is a Python 3 & TensorFlow 1.x implementation based on [**FC4**](https://github.com/yuanming-hu/fc4) codebase.
+* **Dataset preparation**: After downloading dataset. Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`, just like how it is structured in download source).
+ 
+* **Training**: Modify `config.py` (i.e., you may want to rename `EXP_NAME` and specify training data `DATA_NAME`, `TRAIN_FOLDS`, `TEST_FOLDS`) and execute `train.py`. Checkpoints will be saved under `ckpts/EXP_NAME` during training.
+
+* **Evaluation**: Once training is done, you can evaluate checkpoint with `eval.py` on a specific test fold. We recommend to refer to `scripts/eval_squeezenet_clcc_gehler.sh` for 3-fold cross-validation.
 
 ## Acknowledgments
 * **FC4**: https://github.com/yuanming-hu/fc4.

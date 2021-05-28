@@ -10,6 +10,7 @@ import util.rotate
 from config import *
 
 def rand_crop_square(image):
+    image = image.copy()
     scale = math.exp(random.random() * math.log(
       AUGMENTATION_SCALE[1] / AUGMENTATION_SCALE[0])) * AUGMENTATION_SCALE[0]
     s = int(round(min(image.shape[:2]) * scale))
@@ -19,6 +20,7 @@ def rand_crop_square(image):
     return image[start_x:start_x + s, start_y:start_y + s]
 
 def rand_rotate_and_crop(image):
+    image = image.copy()
     angle = (random.random() - 0.5) * AUGMENTATION_ANGLE
     return util.rotate.rotate_and_crop(image, angle)
     
@@ -30,6 +32,7 @@ def rand_flip(image):
     return image
     
 def mask_overexposure(image, value=65535.):
+    image = image.copy()
     binary_mask = (image >= value)
     binary_mask_channelwise = binary_mask[...,0] | binary_mask[...,1] | binary_mask[...,2]
     binary_mask_channelwise = binary_mask_channelwise[...,None]
@@ -38,6 +41,7 @@ def mask_overexposure(image, value=65535.):
     return image
 
 def rand_intensity_gain_and_mask_overexposure(image):
+    image = image.copy()
     if random.random() < 0.5:
         image = mask_overexposure(image, 65535.)
         image = image * random.uniform(AUGMENTATION_GAIN[0], AUGMENTATION_GAIN[1])
@@ -51,6 +55,8 @@ def rand_coloraug(image, illum, cc24):
         * illum: RGB (3,)
         * cc24: RGB [0, 4095] (24, 3)
     """
+    image, illum, cc24 = image.copy(), illum.copy(), cc24.copy()
+    
     # Perturbation coefficients on RGBs.
     color_aug = np.zeros(shape=(3,))
     for i in range(3):
@@ -71,10 +77,12 @@ def augment(image, illum, cc24):
         * illum: RGB (3,)
         * cc24: RGB [0, 4095] (24, 3)
     """
+    image, illum, cc24 = image.copy(), illum.copy(), cc24.copy()
     image = rand_crop_square(image)
     image = rand_rotate_and_crop(image)
     image = cv2.resize(image, (TRAINING_IMAGE_SIZE, TRAINING_IMAGE_SIZE))
     image = rand_flip(image)
     image = rand_intensity_gain_and_mask_overexposure(image)
     image, illum, cc24 = rand_coloraug(image, illum, cc24)
+
     return image, illum, cc24

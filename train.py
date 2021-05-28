@@ -155,7 +155,7 @@ def main(sess):
                     x["illums"]: batch[1]
                 })
                 test_errors['loss'].append(test_loss_val)
-            test_error_p = util.percentiles.valuesdict_to_percentilesdict(train_errors)
+            test_error_p = util.percentiles.valuesdict_to_percentilesdict(test_errors)
             print('-'*100)
             print(test_error_p['loss'])
             print('-'*100)

@@ -1,5 +1,4 @@
 # *CLCC*: Contrastive Learning for Color Constancy (CVPR 2021)
-**(Poster & video will be released before 5/31!)**
 
 [Yi-Chen Lo*](https://scholar.google.com/citations?user=EPYQ48sAAAAJ), [Chia-Che Chang*](https://scholar.google.com.tw/citations?user=FK1RcpoAAAAJ), [Hsuan-Chao Chiu](https://scholar.google.com/citations?user=9gisBUMAAAAJ), [Yu-Hao Huang](https://www.linkedin.com/in/yu-hao-huang-72821060), [Chia-Ping Chen](https://www.linkedin.com/in/chia-ping-chen-81674078/), [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ), Kevin Jou
 

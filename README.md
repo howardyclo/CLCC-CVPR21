@@ -18,7 +18,9 @@ We preprocess each fold of dataset and stored in `.pkl` format for each sample. 
  
 ## Training and Evaluation
 **CLCC** is a Python 3 & TensorFlow 1.x implementation based on [**FC4**](https://github.com/yuanming-hu/fc4) codebase.
-* **Dataset preparation**: After downloading dataset. Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`, just like how it is structured in download source).
+* **Dataset preparation**: After [downloading dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg). Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`, just like how it is structured in download source).
+ 
+* **Pretrained weights preparation**: [Download ImageNet-pretrained weights here.](https://mega.nz/folder/O0wAjSQb#hUN2CgxrrwrFQHQ-9Iz3Qw) Place pretrained weight files under `pretrained_models/imagenet/`.
  
 * **Training**: Modify `config.py` (i.e., you may want to rename `EXP_NAME` and specify training data `DATA_NAME`, `TRAIN_FOLDS`, `TEST_FOLDS`) and execute `train.py`. Checkpoints will be saved under `ckpts/EXP_NAME` during training.
 

@@ -10,7 +10,7 @@ MediaTek Inc., Hsinchu, Taiwan
 
 <img src="https://github.com/howardyclo/CLCC-CVPR21/blob/master/fig/poster.png" />
 
-## [Download Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
+## [Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
 We preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:
 * Raw image: Mask color checker; Subtract black level; Convert to uint16 [0, 65535] BGR numpy array with shape (H, W, 3).
 * RGB label: L2-normalized numpy vector with shape (3,).
@@ -18,7 +18,7 @@ We preprocess each fold of dataset and stored in `.pkl` format for each sample. 
  
 ## Training and Evaluation
 **CLCC** is a Python 3 & TensorFlow 1.x implementation based on [**FC4**](https://github.com/yuanming-hu/fc4) codebase.
-* **Dataset preparation**: After [downloading dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg). Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`, just like how it is structured in download source).
+* **Dataset preparation**: [Download preprocessed dataset here.](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg). Please make sure your dataset folder is structured as `<DATA_DIR>/<DATA_NAME>/<FOLD_ID>` (e.g., `data/gehler/0`, just like how it is structured in download source).
  
 * **Pretrained weights preparation**: [Download ImageNet-pretrained weights here.](https://mega.nz/folder/O0wAjSQb#hUN2CgxrrwrFQHQ-9Iz3Qw) Place pretrained weight files under `pretrained_models/imagenet/`.
  

@@ -11,7 +11,7 @@ MediaTek Inc., Hsinchu, Taiwan
 <img src="https://github.com/howardyclo/CLCC-CVPR21/blob/master/fig/poster.png" />
 
 ## [Download Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
-Since the [original data preprocessing code](https://github.com/yuanming-hu/fc4/blob/master/datasets.py) and procedure are quite tedious, we preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:
+We preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:
 * Raw image: Mask color checker; Subtract black level; Convert to uint16 [0, 65535] BGR numpy array with shape (H, W, 3).
 * RGB label: L2-normalized numpy vector with shape (3,).
 * Color checker: [0, 4095] BGR numpy array with shape (24, 3) for raw-to-raw mapping presented in our paper (see `util/raw2raw.py` and also *section 4.3* in our paper). A few of them are stored in all zeros due to the failure of color checker detection. Note that we convert it into RGB format during preprocessing in `dataloader.py`, and our raw-to-raw mapping algorithm also manipulates it in RGB format.

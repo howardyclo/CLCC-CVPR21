@@ -26,6 +26,10 @@ We preprocess each fold of dataset and stored in `.pkl` format for each sample. 
 
 * **Evaluation**: Once training is done, you can evaluate checkpoint with `eval.py` on a specific test fold. We recommend to refer to `scripts/eval_squeezenet_clcc_gehler.sh` for 3-fold cross-validation.
 
+## Acknowledgments
+* **FC4**: https://github.com/yuanming-hu/fc4.
+* **Color checker detection**: https://github.com/colour-science/colour-checker-detection. To increase detection accuracy, performing homography with color checker coordinates provided by the original dataset can help a lot.
+
 ## Citation
 ```
 @misc{lo2021clcc,
@@ -37,7 +41,3 @@ We preprocess each fold of dataset and stored in `.pkl` format for each sample. 
       primaryClass={cs.CV}
 }
 ```
-
-## Acknowledgments
-* **FC4**: https://github.com/yuanming-hu/fc4.
-* **Color checker detection**: https://github.com/colour-science/colour-checker-detection. To increase detection accuracy, performing homography with color checker coordinates provided by the original dataset can help a lot.

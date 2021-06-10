@@ -6,7 +6,7 @@ MediaTek Inc., Hsinchu, Taiwan
 
 (*) indicates equal contribution.
 
-## [Paper](https://arxiv.org/abs/2106.04989) | [Poster](https://drive.google.com/file/d/1CMQc4UNz3u7YNzRIndhv9JZOsnyJXWja/view?usp=sharing) | [5-min Video](https://drive.google.com/file/d/1X1r-Tdpg9muDIuL0KQhToDVCj8DktWkj/view?usp=sharing) | [5-min Slides](https://drive.google.com/file/d/15DURpH6eTK3eLviOWUBDV74jHKtv7UtW/view?usp=sharing) | [10-min Slides](https://drive.google.com/file/d/1oMmoaaWmft7jjOp2-atoB4icd69Agen0/view?usp=sharing)
+## [Paper](https://arxiv.org/abs/2106.04989) | [Poster](https://drive.google.com/file/d/1CMQc4UNz3u7YNzRIndhv9JZOsnyJXWja/view?usp=sharing) | [5-min Video](https://drive.google.com/file/d/1X1r-Tdpg9muDIuL0KQhToDVCj8DktWkj/view?usp=sharing) | [5-min Slides]() | [10-min Slides]()
 
 <img src="https://github.com/howardyclo/CLCC-CVPR21/blob/master/fig/poster.png" />
 

@@ -6,8 +6,7 @@ MediaTek Inc., Hsinchu, Taiwan
 
 (*) indicates equal contribution.
 
-## Paper
-TL;DR: 
+## [Paper](https://arxiv.org/abs/2106.04989) | [Poster](https://mega.nz/file/moJTVKIA#IRulQ6MTPtKaufURSP7_KN-2ePTgFLh5VlX9TwWCxo0) | [5-min Video](https://mega.nz/file/rlYjkCzC#9sa0lEHCATsmtqk_dT8KMnGnA5TBvstS82nNOtoaDWA) | [5-min Slides](https://mega.nz/file/C5AnDayS#xPn2vOb80FAZmiwlcDzKnE6CMHfZYipWNxV2ac3xoeQ) | [10-min Slides](https://mega.nz/file/3kBHjCCD#gNJy4auS322JrXr4ioR0OOCaxJgrY6EAIJMoodnI-eU)
 
 ## [Download Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
 Since the [original data preprocessing code](https://github.com/yuanming-hu/fc4/blob/master/datasets.py) and procedure are quite tedious, we preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:

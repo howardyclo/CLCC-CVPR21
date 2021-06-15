@@ -6,7 +6,7 @@ MediaTek Inc., Hsinchu, Taiwan
 
 (*) indicates equal contribution.
 
-## [Paper](https://arxiv.org/abs/2106.04989) | [Poster](https://drive.google.com/file/d/1CMQc4UNz3u7YNzRIndhv9JZOsnyJXWja/view?usp=sharing) | [5-min Video](https://drive.google.com/file/d/1X1r-Tdpg9muDIuL0KQhToDVCj8DktWkj/view?usp=sharing) | [5-min Slides](https://drive.google.com/file/d/1B5XjoIUgMD-zUngdNjXgUhJPTwSb-Ekv/view?usp=sharing) | [10-min Slides](https://drive.google.com/file/d/1WdNwoSzwu-FV9AD3YWogO2A4e3otz2j5/view?usp=sharing)
+## [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Lo_CLCC_Contrastive_Learning_for_Color_Constancy_CVPR_2021_paper.pdf) | [Poster](https://drive.google.com/file/d/1CMQc4UNz3u7YNzRIndhv9JZOsnyJXWja/view?usp=sharing) | [5-min Video](https://drive.google.com/file/d/1X1r-Tdpg9muDIuL0KQhToDVCj8DktWkj/view?usp=sharing) | [5-min Slides](https://drive.google.com/file/d/1B5XjoIUgMD-zUngdNjXgUhJPTwSb-Ekv/view?usp=sharing) | [10-min Slides](https://drive.google.com/file/d/1WdNwoSzwu-FV9AD3YWogO2A4e3otz2j5/view?usp=sharing)
 
 <img src="https://github.com/howardyclo/CLCC-CVPR21/blob/master/fig/poster.png" />
 

@@ -32,12 +32,12 @@ We preprocess each fold of dataset and stored in `.pkl` format for each sample. 
 
 ## Citation
 ```
-@misc{lo2021clcc,
-      title={CLCC: Contrastive Learning for Color Constancy}, 
-      author={Yi-Chen Lo and Chia-Che Chang and Hsuan-Chao Chiu and Yu-Hao Huang and Chia-Ping Chen and Yu-Lin Chang and Kevin Jou},
-      year={2021},
-      eprint={2106.04989},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Lo_2021_CVPR,
+    author    = {Lo, Yi-Chen and Chang, Chia-Che and Chiu, Hsuan-Chao and Huang, Yu-Hao and Chen, Chia-Ping and Chang, Yu-Lin and Jou, Kevin},
+    title     = {CLCC: Contrastive Learning for Color Constancy},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {8053-8063}
 }
 ```

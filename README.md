@@ -10,6 +10,11 @@ MediaTek Inc., Hsinchu, Taiwan
 
 <img src="https://github.com/howardyclo/CLCC-CVPR21/blob/master/fig/poster.png" />
 
+## Important update(2022/03/09)
+Dear user, the dataset and imagenet pretrained weight, our released dataset and imagenet pretrained weight are automatically deleted by cloud storage service (Mega).
+Due to several reasons (large size of dataset that cannot be free uploaded by other cloud storage services, company's policy for releasing dataset and personal heavy workload),
+We suggest user to download and re-processing the dataset by following the issue #2. We're sorry for the inconvenience.
+
 ## [Dataset](https://mega.nz/folder/G9JUQRja#Nnd40DVW41M_lNCW5f0ZGg)
 We preprocess each fold of dataset and stored in `.pkl` format for each sample. Each sample contains:
 * Raw image: Mask color checker; Subtract black level; Convert to uint16 [0, 65535] BGR numpy array with shape (H, W, 3).
